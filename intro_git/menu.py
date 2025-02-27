@@ -7,6 +7,7 @@ def menu(a, b):
         print("[2] Subtrair")
         print("[3] Multiplicar")
         print("[4] Dividir")
+        print("[0] Sair")
         escolha = input("Digite o número da opção desejada: ")
         
         if escolha == "1":
@@ -17,3 +18,6 @@ def menu(a, b):
             print(f'{a} * {b} = {calculadora.multiplicar(a, b)}')
         elif escolha == "4":
             print(f'{a} / {b} = {calculadora.dividir(a, b)}')
+        elif escolha == "0":
+            print("Você saiu da calculadora")
+            break
