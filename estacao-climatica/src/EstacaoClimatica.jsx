@@ -17,7 +17,7 @@ export class EstacaoClimatica extends Component {
             this.setState({ 
                 data: new Date().toLocaleString() 
             })
-            console.log('setState foi chamado')
+            // console.log('setState foi chamado')
 
         }, 1000)
         console.log(this.timer)
@@ -46,7 +46,7 @@ export class EstacaoClimatica extends Component {
                         <p className="text-center">
                             {
                                 this.props.latitude ?
-                                    `Coordenadas: ${this.props.latitude}, ${this.props.longitude}, Data: ${this.props.data}`
+                                    `Coordenadas: ${this.props.latitude}, ${this.props.longitude}, Data: ${this.state.data}`
                                     :
                                     this.props.mensagemDeErro ?
                                         `${this.props.mensagemDeErro}`
